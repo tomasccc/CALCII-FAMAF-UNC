@@ -14,11 +14,15 @@ jobs:
     steps:
       - name: Descargar el código
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Configurar Python
+      - name: Configurar Python y caché de pip
         uses: actions/setup-python@v5
         with:
           python-version: 3.x
+          cache: pip
+          cache-dependency-path: requirements.txt
 
       - name: Instalar dependencias gráficas del sistema (Para Social Cards)
         run: |
@@ -27,8 +31,7 @@ jobs:
 
       - name: Instalar dependencias de MkDocs
         run: |
-          pip install mkdocs-material
-          pip install "mkdocs-material[imaging]"
+          pip install -r requirements.txt
 
       - name: Construir y publicar en GitHub Pages
         run: mkdocs gh-deploy --force
