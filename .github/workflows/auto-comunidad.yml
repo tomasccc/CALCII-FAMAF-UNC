@@ -1,0 +1,35 @@
+name: Bot de Auto-Aprobación Comunitaria
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  auto-merge-comunidad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Analizar qué carpetas se modificaron
+        id: archivos
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            oficial:
+              - 'docs/oficial/**'
+              - 'docs/*.*'
+              - 'mkdocs.yml'
+              - '.github/**'
+            comunidad:
+              - 'docs/comunidad/**'
+
+      - name: Aprobar y Fusionar (solo si es 100% comunidad)
+        # si tocó la comunidad, pero no tocó nada oficial, procedemos.
+        if: steps.archivos.outputs.comunidad == 'true' && steps.archivos.outputs.oficial == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr review ${{ github.event.pull_request.number }} --approve -b "**¡Aporte detectado y aprobado automáticamente!**<br>El Oráculo lo ha revisado y lo fusionará en el sitio en los próximos minutos. ¡Gracias por colaborar con las notas!"
+          gh pr merge ${{ github.event.pull_request.number }} --merge --auto

@@ -4,7 +4,6 @@ site_url: https://tomasccc.github.io/CALCII-FAMAF-UNC/
 repo_url: https://github.com/tomasccc/CALCII-FAMAF-UNC
 repo_name: tomasccc/CALCII-FAMAF-UNC
 edit_uri: edit/main/docs/
-
 theme:
   name: material
   custom_dir: overrides  
