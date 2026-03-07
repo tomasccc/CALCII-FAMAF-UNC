@@ -47,6 +47,8 @@ extra:
       name: Linux Mint
 plugins:
   - search
+  - tags:
+      tags_file: tags.md
   - social:
       cards_layout_options:
         background_color: "#3f51b5"  
@@ -58,7 +60,15 @@ plugins:
       fallback_to_build_date: true
   - git-authors:
       show_contribution: true
-      show_line_count: true           
+      show_line_count: true        
+      ignore_authors:
+        - "dependabot[bot]"
+        - "dependabot-preview[bot]"
+        - "dependabot-core[bot]"
+        - "dependabot"
+        - "dependabot[bot]"
+        - "dependabot-preview" 
+        - "dependabot-core" 
 
 hooks:
   - hooks.py
