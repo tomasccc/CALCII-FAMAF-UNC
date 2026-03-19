@@ -1,0 +1,7 @@
+nav:
+  - Bienvenido/a: index.md
+  - comunidad
+  - oficial
+  - Conversor OCR: conversor.md
+  - Guía de Contribución: Guía de contribución.md
+  - Índice: tags.md
