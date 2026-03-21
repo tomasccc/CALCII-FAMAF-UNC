@@ -45,18 +45,8 @@ Este sitio nació como una forma de organizar los apuntes del autor, y evolucion
 
 Se planea seguir mejorando la **velocidad, la infraestructura y las opciones de colaboración**, garantizando siempre dos reglas de oro: 
 
-- **Acceso a la información 100% gratuito.**
-- **Colaboración abierta, transparente y libre.**
+Espero te sea de utilidad, y que puedas colaborar con el sitio para que cada vez sea mejor. [Tomás](https://github.com/tomasccc) (desarrollador de esto), creó este mini proyecto, integrando otros mini proyectos, con la intención de facilitar el acceso a material de estudio, y de fomentar la colaboración entre alumnos, así que de más está decir que cualquier aporte es bienvenido.
+![a](https://media.tenor.com/N40-4WgNinAAAAAM/tobey-maguire-hello.gif)
+Abrazo grande.
 
-Construir, mantener y mejorar el sitio lleva tiempo y recursos. Toda ayuda es súper bienvenida en el proceso:
-
-* **En desarrollo:** Si sabés programar, tirando líneas de código o reportando errores.
-* **En contenido:** Subiendo tus resúmenes, o corrigiendo un simple error de tipeo.
-* **En soporte:** Cualquier apoyo (incluso monetario para bancar los servidores o invitar un café) ayuda a mantener el proyecto vivo y sin publicidad.
-
-Espero que la herramienta te sea de mucha utilidad y que te animes a dejar tu granito de arena para que siga creciendo. 
-
-*[Tomás](https://github.com/tomasccc)*.
-
-![Tobey Maguire Hello](https://media.tenor.com/N40-4WgNinAAAAAM/tobey-maguire-hello.gif)  
-*Abrazo grande.*
+cambio desde otra cuenta
