@@ -60,5 +60,3 @@ jobs:
           SITE_URL: ${{ env.SITE_URL }}
           REPO_URL: ${{ env.REPO_URL }}
           EDIT_URI: "edit/main/docs/"
-          REPO_NAME: ${{ github.repository }} 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
