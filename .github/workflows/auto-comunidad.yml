@@ -31,7 +31,7 @@ jobs:
       - name: Aprobar y Programar Auto-Merge
         if: steps.archivos.outputs.comunidad == 'true' && steps.archivos.outputs.oficial == 'false'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.NOTES_BOT }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           gh pr review $PR_NUMBER --approve -b "**¡Aporte de comunidad detectado!**<br>Se fusionará automáticamente en cuanto todos los checks obligatorios (checklist) estén en verde."
