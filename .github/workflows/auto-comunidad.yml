@@ -1,0 +1,38 @@
+name: Bot de Auto-Aprobación Comunitaria
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  auto-merge-comunidad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Analizar qué carpetas se modificaron
+        id: archivos
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            oficial:
+              - 'docs/oficial/**'
+              - 'docs/*.*'
+              - 'mkdocs.yml'
+              - '.github/**'
+            comunidad:
+              - 'docs/comunidad/**'
+
+      - name: Aprobar y Programar Auto-Merge
+        if: steps.archivos.outputs.comunidad == 'true' && steps.archivos.outputs.oficial == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.NOTES_BOT }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr review $PR_NUMBER --approve -b "**¡Aporte de comunidad detectado!**<br>Se fusionará automáticamente en cuanto todos los checks obligatorios (checklist) estén en verde."
+          gh pr merge $PR_NUMBER --merge --auto --delete-branch || echo "El auto-merge se activará cuando los checks terminen."
