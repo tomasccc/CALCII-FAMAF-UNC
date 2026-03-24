@@ -1,5 +1,4 @@
 ---
 title: nuevo
 ---
-
-asd
+$asdasd$
