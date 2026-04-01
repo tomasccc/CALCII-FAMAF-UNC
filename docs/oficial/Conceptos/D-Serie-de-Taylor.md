@@ -1,6 +1,5 @@
 ---
-carpeta: oficial
-title: aaa
+title: "1212121212"
 ---
 Empecemos por suponer que ($f$) es cualquier función que se puede hallar esa representación mediante una serie de potencias
 $$1 \qquad f(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + c_3(x-a)^3 + c_4(x-a)^4 + \cdots \quad |x-a| < R$$
@@ -20,4 +19,4 @@ Y si continuamos derivando y sustituyendo ($x = a$), obtenemos
 $$f^{(n)}(a) = 2 \cdot 3 \cdot 4 \cdot \cdots \cdot n c_n = n!c_n$$
 Al resolver esta ecuación para el $n$-ésimo coeficiente ($c_n$), tenemos
 $$c_n = \frac{f^{(n)}(a)}{n!}$$
-Esta fórmula sigue siendo válida incluso para ($n = 0$) si adoptamos la convención de que ($0! = 1$) y ($f^{(0)} = f$). En estos términos, hemos demostrado el teorema del inciso \[[11.10 Series de Taylor y Maclaurin]]
+Esta fórmula sigue siendo válida incluso para ($n = 0$) si adoptamos la convención de que ($0! = 1$) y ($f^{(0)} = f$). En estos términos, hemos demostrado el teorema del inciso [[11.10 Series de Taylor y Maclaurin]]
