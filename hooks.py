@@ -49,13 +49,16 @@ def on_config(config):
             'summary': '{{title}}',
             'fields': [
                 {
-                    'label': '¿Crear en subcarpeta nueva? (Opcional)', 
+                    'label': '📁 Destino del apunte', 
                     'name': 'carpeta', 
                     'widget': 'string', 
-                    'default': '.', 
-                    'hint': 'Para guardar en la raíz, dejá el punto. Para crear una carpeta, borrá el punto y escribí el nombre (ej: Unidad 4)'
+                    'default': 'general', 
+                    'required': True,
+                    'hint': f'👉 Para archivo suelto: dejá la palabra "general".\n👉 Para una nueva carpeta: borrá "general" y escribí el nombre SIN ESPACIOS (ej: unidad-4).',
+                    'pattern': ['^[a-zA-Z0-9_-]+$', '⚠️ El nombre no puede tener espacios, puntos ni barras. Usá guiones (ejemplo: apuntes-extra).']
                 },
-                {'label': 'Título', 'name': 'title', 'widget': 'string'},
+                {'label': 'Título', 'name': 'title', 'widget': 'string',
+                 'hint': 'El título de la nota.'},
                 {'label': 'Cuerpo', 'name': 'body', 'widget': 'markdown'}
             ]
         })
