@@ -21,32 +21,23 @@ def on_config(config):
 
     # configuración base 
     decap_config = {
-        'local_backend': False,
+        'local_backend': True,
         'locale': 'es',
         'backend': {
             'name': 'github',
             'repo': 'tomasccc/CALCII-FAMAF-UNC',
-            'branch': 'main',
-            'base_url': 'https://decap-proxy.tomycaruso.workers.dev',
-            'open_authoring': True,
+            'branch': 'cms-tests'
         },
-        'slug': {
-            'encoding': 'ascii',        
-            'clean_accents': True,      
-            'sanitize_replacement': '-' 
-        },
-        'publish_mode': 'editorial_workflow',
+        'publish_mode': 'simple',
         'media_folder': 'docs/assets/comunidad',
         'public_folder': '/assets/comunidad',
         'collections': [] # lo llenamos con las carpetas que encontremos en comunidad/ y oficial/
     }
-    collections_names = set() # para evitar duplicados en caso de nombres repetidos
 
     # funcion para escanear y agregar colecciones dinámicamente
     def scan_and_add_collections(base_folder_name, label_prefix):
         base_dir = os.path.join(docs_dir, base_folder_name)
-        raiz_collection_name = f"{base_folder_name}_raiz"
-        collections_names.add(raiz_collection_name) # agregamos la colección raíz al set para evitar duplicados
+        
         # agregamos raiz para los archivos sueltos Y crear carpetas
         decap_config['collections'].append({
             'name': f"{base_folder_name}_raiz",
@@ -54,34 +45,18 @@ def on_config(config):
             'folder': f"docs/{base_folder_name}",
             'path': '{{carpeta}}/{{slug}}', 
             'create': True,
-            'delete': True,
             'extension': 'md',
             'summary': '{{title}}',
             'fields': [
                 {
-                    'label': '📁 Destino del apunte', 
+                    'label': '¿Crear en subcarpeta nueva? (Opcional)', 
                     'name': 'carpeta', 
                     'widget': 'string', 
-                    'default': 'general', 
-                    'required': True,
-                    'hint': f'👉 Para archivo suelto: dejá la palabra "general".\n👉 Para una nueva carpeta: borrá "general" y escribí el nombre SIN ESPACIOS (ej: unidad-4).',
-                    'pattern': ['^[a-zA-Z0-9_-]+$', '⚠️ El nombre no puede tener espacios, puntos ni barras. Usá guiones (ejemplo: apuntes-extra).']
+                    'default': '.', 
+                    'hint': 'Para guardar en la raíz, dejá el punto. Para crear una carpeta, borrá el punto y escribí el nombre (ej: Unidad 4)'
                 },
-                {'label': 'Título', 'name': 'title', 'widget': 'string',
-                 'hint': 'El título de la nota.'},
-                {'label': 'Cuerpo', 'name': 'body', 'widget': 'markdown'},
-                 {
-                            'label': 'Autoría y Responsabilidad (Obligatorio)',
-                            'name': 'check_autoria_responsabilidad',
-                            'widget': 'select',
-                            'options': [
-                                'No estoy de acuerdo',
-                                'Acepto'
-                            ],
-                            'default': 'No estoy de acuerdo',
-                            'hint': '👉 Desplegá el menú y seleccioná "Acepto..." para habilitar el guardado.',
-                            'pattern': ['Acepto', ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución para publicar/editar.']
-                        },
+                {'label': 'Título', 'name': 'title', 'widget': 'string'},
+                {'label': 'Cuerpo', 'name': 'body', 'widget': 'markdown'}
             ]
         })
 
@@ -96,37 +71,17 @@ def on_config(config):
                     # generamos ID interno para Decap que no le gustan los espacios
                     col_id = f"{base_folder_name}_{re.sub(r'[^a-zA-Z0-9]', '_', folder_name).lower()}"
 
-                    original_col_id = col_id
-                    count = 2
-                    while col_id in collections_names: # si ya existe, le agregamos un sufijo numérico
-                        col_id = f"{original_col_id}_{count}"
-                        count += 1
-                        
-                    collections_names.add(col_id) # registramos el ID final
                     # añadimos la subcarpeta 
                     decap_config['collections'].append({
                         'name': col_id,
                         'label': f"📚 {label_prefix}: {folder_name}",
                         'folder': f"docs/{base_folder_name}/{folder_name}",
                         'create': True,
-                        'delete': True,
                         'extension': 'md',
                         'summary': '{{title}}',
                         'fields': [
                             {'label': 'Título', 'name': 'title', 'widget': 'string'},
-                            {'label': 'Cuerpo', 'name': 'body', 'widget': 'markdown'},
-                            {
-                            'label': 'Autoría y Responsabilidad (Obligatorio)',
-                            'name': 'check_autoria_responsabilidad',
-                            'widget': 'select',
-                            'options': [
-                                'No estoy de acuerdo',
-                                'Acepto'
-                            ],
-                            'default': 'No estoy de acuerdo',
-                            'hint': '👉 Desplegá el menú y seleccioná "Acepto..." para habilitar el guardado.',
-                            'pattern': ['Acepto', ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución para publicar/editar.']
-                        },
+                            {'label': 'Cuerpo', 'name': 'body', 'widget': 'markdown'}
                         ]
                     })
 
