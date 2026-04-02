@@ -1,2 +1,2 @@
 ## Bienvenido a las notas Oficiales
-nuevo cambio a oficiales
+Aporta al sitio con tus apuntes, ejercicios resueltos, resúmenes o cualquier material que pueda ser útil.
