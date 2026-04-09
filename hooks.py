@@ -33,11 +33,13 @@ def on_config(config):
         'public_folder': '/assets/comunidad',
         'collections': [] # lo llenamos con las carpetas que encontremos en comunidad/ y oficial/
     }
+    collections_names = set() # para evitar duplicados en caso de nombres repetidos
 
     # funcion para escanear y agregar colecciones dinámicamente
     def scan_and_add_collections(base_folder_name, label_prefix):
         base_dir = os.path.join(docs_dir, base_folder_name)
-        
+        raiz_collection_name = f"{base_folder_name}_raiz"
+        collections_names.add(raiz_collection_name) # agregamos la colección raíz al set para evitar duplicados
         # agregamos raiz para los archivos sueltos Y crear carpetas
         decap_config['collections'].append({
             'name': f"{base_folder_name}_raiz",
@@ -86,6 +88,13 @@ def on_config(config):
                     # generamos ID interno para Decap que no le gustan los espacios
                     col_id = f"{base_folder_name}_{re.sub(r'[^a-zA-Z0-9]', '_', folder_name).lower()}"
 
+                    original_col_id = col_id
+                    count = 2
+                    while col_id in collections_names: # si ya existe, le agregamos un sufijo numérico
+                        col_id = f"{original_col_id}_{count}"
+                        count += 1
+                        
+                    collections_names.add(col_id) # registramos el ID final
                     # añadimos la subcarpeta 
                     decap_config['collections'].append({
                         'name': col_id,
