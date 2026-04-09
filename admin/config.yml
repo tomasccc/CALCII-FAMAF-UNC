@@ -123,7 +123,7 @@ collections:
     - Acepto
     - ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución
       para publicar/editar.'
-- name: comunidad_nueva
+- name: comunidad_nueva_2
   label: '📚 Comunidad: nueva'
   folder: docs/comunidad/nueva
   create: true
