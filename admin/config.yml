@@ -144,6 +144,32 @@ collections:
     - Acepto
     - ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución
       para publicar/editar.'
+- name: oficial_integrales
+  label: '📚 Oficial: Integrales'
+  folder: docs/oficial/Integrales
+  create: true
+  delete: true
+  extension: md
+  summary: '{{title}}'
+  fields:
+  - label: Título
+    name: title
+    widget: string
+  - label: Cuerpo
+    name: body
+    widget: markdown
+  - label: Autoría y Responsabilidad (Obligatorio)
+    name: check_autoria_responsabilidad
+    widget: select
+    options:
+    - No estoy de acuerdo
+    - Acepto
+    default: No estoy de acuerdo
+    hint: 👉 Desplegá el menú y seleccioná "Acepto..." para habilitar el guardado.
+    pattern:
+    - Acepto
+    - ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución
+      para publicar/editar.'
 - name: oficial_series_de_potencias___u3
   label: '📚 Oficial: Series de potencias - U3'
   folder: docs/oficial/Series de potencias - U3
@@ -170,9 +196,35 @@ collections:
     - Acepto
     - ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución
       para publicar/editar.'
-- name: oficial_oficial
-  label: '📚 Oficial: oficial'
-  folder: docs/oficial/oficial
+- name: oficial_sucesiones_y_series___u2
+  label: '📚 Oficial: Sucesiones y Series - U2'
+  folder: docs/oficial/Sucesiones y Series - U2
+  create: true
+  delete: true
+  extension: md
+  summary: '{{title}}'
+  fields:
+  - label: Título
+    name: title
+    widget: string
+  - label: Cuerpo
+    name: body
+    widget: markdown
+  - label: Autoría y Responsabilidad (Obligatorio)
+    name: check_autoria_responsabilidad
+    widget: select
+    options:
+    - No estoy de acuerdo
+    - Acepto
+    default: No estoy de acuerdo
+    hint: 👉 Desplegá el menú y seleccioná "Acepto..." para habilitar el guardado.
+    pattern:
+    - Acepto
+    - ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución
+      para publicar/editar.'
+- name: oficial_general
+  label: '📚 Oficial: general'
+  folder: docs/oficial/general
   create: true
   delete: true
   extension: md
