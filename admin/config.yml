@@ -15,6 +15,7 @@ collections:
   folder: docs/comunidad
   path: '{{carpeta}}/{{slug}}'
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -54,6 +55,7 @@ collections:
   label: '📚 Comunidad: Nueva'
   folder: docs/comunidad/Nueva
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -79,6 +81,7 @@ collections:
   label: '📚 Comunidad: asd'
   folder: docs/comunidad/asd
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -104,6 +107,7 @@ collections:
   label: '📚 Comunidad: general'
   folder: docs/comunidad/general
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -129,6 +133,7 @@ collections:
   label: '📚 Comunidad: kids-withg'
   folder: docs/comunidad/kids-withg
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -154,6 +159,7 @@ collections:
   label: '📚 Comunidad: nueva'
   folder: docs/comunidad/nueva
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -180,6 +186,7 @@ collections:
   folder: docs/oficial
   path: '{{carpeta}}/{{slug}}'
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -219,6 +226,7 @@ collections:
   label: '📚 Oficial: Conceptos'
   folder: docs/oficial/Conceptos
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -244,6 +252,7 @@ collections:
   label: '📚 Oficial: Nueva carpeta'
   folder: docs/oficial/Nueva carpeta
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -269,6 +278,7 @@ collections:
   label: '📚 Oficial: Series de potencias - U3'
   folder: docs/oficial/Series de potencias - U3
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -294,6 +304,7 @@ collections:
   label: '📚 Oficial: general'
   folder: docs/oficial/general
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
@@ -319,6 +330,7 @@ collections:
   label: '📚 Oficial: oficial'
   folder: docs/oficial/oficial
   create: true
+  delete: true
   extension: md
   summary: '{{title}}'
   fields:
