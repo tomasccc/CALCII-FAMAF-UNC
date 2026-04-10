@@ -1,5 +1,6 @@
 ---
-title: asdsadasdasd
+title: Convenciones convenientes para el cálculo de series
+check_autoria_responsabilidad: Acepto
 ---
 No son elecciones arbitrarias, sino las definiciones que hacen que todo “encaje” perfectamente.
 
