@@ -2962,24 +2962,27 @@
 <p>Dada una sucesión <span class="arithmatex">\((a_n)\)</span>, podemos extraer sucesiones descartando algunos términos. 
 Cada nueva sucesión se llama <strong>subsucesión</strong>.</p>
 <h4 id="definicion-formal"><strong>Definición</strong> <strong>formal</strong><a class="headerlink" href="#definicion-formal" title="Permanent link">&para;</a></h4>
-<p>Dada una sucesión de números reales <span class="arithmatex">\((a_n)_{n=1}^\infty\)</span>, una <strong>subsucesión</strong> es una nueva sucesión <span class="arithmatex">\((a_{n_k})_{k=1}^\infty\)</span> que se obtiene seleccionando ciertos términos de la sucesión original, manteniendo estrictamente el orden en el que aparecían.
+<p>Dada una sucesión de números reales <span class="arithmatex">\((a*n)*{n=1}^\infty\)</span>, una <strong>subsucesión</strong> es una nueva sucesión <span class="arithmatex">\((a*{n_k})*{k=1}^\infty\)</span> que se obtiene seleccionando ciertos términos de la sucesión original, manteniendo estrictamente el orden en el que aparecían.
 Para que el orden se mantenga, los índices seleccionados deben formar una sucesión de números naturales estrictamente creciente. Es decir, los índices <span class="arithmatex">\(n_k\)</span> deben cumplir que:</p>
 <div class="arithmatex">\[n_1 &lt; n_2 &lt; n_3 &lt; \cdots &lt; n_k &lt; \cdots\]</div>
-<p><strong><a href="../Ejemplos/E-Subsucesiones/">E-Subsucesiones</a></strong></p>
+<p><strong>[E-Subsucesiones](Ejemplos/E-Subsucesiones.md)</strong></p>
 <hr />
 <h5 id="teorema-de-convergencia-de-subsucesiones"><strong>Teorema de Convergencia de Subsucesiones</strong><a class="headerlink" href="#teorema-de-convergencia-de-subsucesiones" title="Permanent link">&para;</a></h5>
-<p>Si <span class="arithmatex">\(\lim_{n \to \infty} a_n = L\)</span>, entonces para cualquier subsucesión <span class="arithmatex">\((a_{n_k})\)</span>, se cumple que:</p>
-<div class="arithmatex">\[\lim_{k \to \infty} a_{n_k} = L\]</div>
+<p>Si <span class="arithmatex">\(\lim*{n \to \infty} a_n = L\)</span>, entonces para cualquier subsucesión <span class="arithmatex">\((a*{n*k})\)</span>, se cumple que:</p>
+<div class="arithmatex">\[\lim*{k \to \infty} a_{n_k} = L\]</div>
 <hr />
-<p><strong>En otras palabras.</strong> Sea <span class="arithmatex">\((a_n)\)</span> una sucesión de números reales. Si la sucesión <span class="arithmatex">\((a_n)\)</span> converge a un límite <span class="arithmatex">\(L\)</span>, entonces toda subsucesión <span class="arithmatex">\((a_{n_k})\)</span> extraída de ella también es convergente y su límite es exactamente el mismo <span class="arithmatex">\(L\)</span>.
-<strong><a href="../Ejemplos/E-Teorema%20de%20Convergencia%20de%20Subsucesiones/">E-Teorema de Convergencia de Subsucesiones</a></strong></p>
+<p><strong>En otras palabras.</strong> Sea <span class="arithmatex">\((a*n)\)</span> una sucesión de números reales. Si la sucesión <span class="arithmatex">\((a_n)\)</span> converge a un límite <span class="arithmatex">\(L\)</span>, entonces toda subsucesión <span class="arithmatex">\((a*{n_k})\)</span> extraída de ella también es convergente y su límite es exactamente el mismo <span class="arithmatex">\(L\)</span>.
+<strong>[E-Teorema de Convergencia de Subsucesiones](Ejemplos/E-Teorema de Convergencia de Subsucesiones.md)</strong></p>
 <hr />
 <h5 id="en-la-practica"><strong>En la práctica</strong><a class="headerlink" href="#en-la-practica" title="Permanent link">&para;</a></h5>
 <p>La definición de límite nos dice que, a medida que avanzamos en la sucesión original, todos los términos terminan agrupándose infinitamente cerca del valor <span class="arithmatex">\(L\)</span>. 
 Como una subsucesión se forma simplemente tomando términos de esa misma sucesión cada vez más adelante (sin alterar el orden), es inevitable que esos términos seleccionados también queden "atrapados" en esa misma cercanía hacia <span class="arithmatex">\(L\)</span>. </p>
-<p><strong>Observación.</strong> Este teorema se usa muchísimo más para demostrar que una sucesión diverge. 
-- Si logramos encontrar una <strong>subsucesión</strong> que diverge.
-- O si logramos encontrar dos <strong>subsucesiones</strong> que convergen a límites distintos.</p>
+<p><strong>Observación.</strong> Este teorema se usa muchísimo más para demostrar que una sucesión diverge. </p>
+<ul>
+<li>Si logramos encontrar una <strong>subsucesión</strong> que diverge.</li>
+<li>O si logramos encontrar dos <strong>subsucesiones</strong> que convergen a límites distintos.
+*</li>
+</ul>
 <div class="arithmatex">\[\implies \text{ Entonces podemos afirmar con absoluta seguridad que la sucesión original diverge.}\]</div>
 
 
@@ -3003,7 +3006,7 @@ Como una subsucesión se forma simplemente tomando términos de esa misma sucesi
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 5, 2026 23:15:26 UTC"><span class="timeago" datetime="2026-04-05T23:15:26+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 5, 2026 23:15:26 UTC">2026-04-05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 10, 2026 13:41:18 UTC"><span class="timeago" datetime="2026-04-10T13:41:18+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 10, 2026 13:41:18 UTC">2026-04-10</span>
   </span>
 
     
@@ -3023,11 +3026,12 @@ Como una subsucesión se forma simplemente tomando términos de esa misma sucesi
   <span class="md-source-file__fact">
     <span class="md-icon" title="Contributors">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
       
     </span>
     <nav>
       
+        <a href="mailto:tomas.caruso@mi.unc.edu.ar">tomascaruso-hub</a>, 
         <a href="mailto:405310@tecnicatura.frc.utn.edu.ar">405310-Caruso-Tomas</a>
     </nav>
   </span>
