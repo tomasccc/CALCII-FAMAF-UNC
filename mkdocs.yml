@@ -69,6 +69,7 @@ plugins:
   - git-committers:
       repository: !ENV [REPO_NAME, "tomasccc/ergo"] 
       branch: main
+
   - git-authors:
       show_contribution: true
       show_line_count: true        
