@@ -125,6 +125,31 @@ collections:
     - Acepto
     - ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución
       para publicar/editar.'
+- name: comunidad_kids_withg
+  label: '📚 Comunidad: kids-withg'
+  folder: docs/comunidad/kids-withg
+  create: true
+  extension: md
+  summary: '{{title}}'
+  fields:
+  - label: Título
+    name: title
+    widget: string
+  - label: Cuerpo
+    name: body
+    widget: markdown
+  - label: Autoría y Responsabilidad (Obligatorio)
+    name: check_autoria_responsabilidad
+    widget: select
+    options:
+    - No estoy de acuerdo
+    - Acepto
+    default: No estoy de acuerdo
+    hint: 👉 Desplegá el menú y seleccioná "Acepto..." para habilitar el guardado.
+    pattern:
+    - Acepto
+    - ' Debes abrir el menú desplegable y aceptar las condiciones de uso y distribución
+      para publicar/editar.'
 - name: comunidad_nueva_2
   label: '📚 Comunidad: nueva'
   folder: docs/comunidad/nueva
