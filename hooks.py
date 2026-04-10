@@ -49,6 +49,7 @@ def on_config(config):
             'folder': f"docs/{base_folder_name}",
             'path': '{{carpeta}}/{{slug}}', 
             'create': True,
+            'delete': True,
             'extension': 'md',
             'summary': '{{title}}',
             'fields': [
@@ -103,6 +104,7 @@ def on_config(config):
                         'label': f"📚 {label_prefix}: {folder_name}",
                         'folder': f"docs/{base_folder_name}/{folder_name}",
                         'create': True,
+                        'delete': True,
                         'extension': 'md',
                         'summary': '{{title}}',
                         'fields': [
