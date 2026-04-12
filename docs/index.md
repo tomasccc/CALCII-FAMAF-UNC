@@ -23,7 +23,7 @@ La idea es que llevés tus notas en tu teléfono, sin descargar nada.
     Si ya estás familiarizado con Git, dentro de nuestro **[repositorio oficial](https://github.com/tomasccc/CALCII-FAMAF-UNC)** vas a encontrar todo el código fuente. Podés clonarlo, editarlo a tu gusto y enviar tus *Pull Requests*. El autor estará encantado de revisar tus aportes y fusionarlos en el código fuente del sitio, a la vez que podés decir que sos contribuyente de un proyecto open source ;) .
     
 ??? question "¿No sabés cómo contribuir con notación matemática?"
-    No hay problema, el sitio cuenta con un **conversor de LaTeX** integrado. Solo tenés que subir una foto de tus apuntes escritos a mano o una captura de pantalla de una fórmula/teorema, y el sistema los convertirá en texto editable con la notación matemática perfectamente formateada. Así, **podés copiar y pegar directamente en el editor web sin tener que escribir código LaTeX manualmente**.
+    No te preocupés, el sitio cuenta con un **conversor de LaTeX** integrado. Solo tenés que subir una foto de tus apuntes escritos a mano o una captura de pantalla de una fórmula/teorema, y el sistema los convertirá en texto editable con la notación matemática perfectamente formateada. Así, **podés copiar y pegar directamente en el editor web sin tener que escribir código LaTeX manualmente**.
     
     Ojo que el conversor no es perfecto, así que siempre es buena idea revisar el resultado antes de pegarlo. Pero es una herramienta súper útil para agilizar la creación de contenido con fórmulas complejas sin necesidad de aprender LaTeX.
 ---
@@ -45,6 +45,18 @@ Este sitio nació como una forma de organizar los apuntes del autor, y evolucion
 
 Se planea seguir mejorando la **velocidad, la infraestructura y las opciones de colaboración**, garantizando siempre dos reglas de oro: 
 
-Espero te sea de utilidad, y que puedas colaborar con el sitio para que cada vez sea mejor. [Tomás](https://github.com/tomasccc) (desarrollador de esto), creó este mini proyecto, integrando otros mini proyectos, con la intención de facilitar el acceso a material de estudio, y de fomentar la colaboración entre alumnos, así que de más está decir que cualquier aporte es bienvenido.
-![a](https://media.tenor.com/N40-4WgNinAAAAAM/tobey-maguire-hello.gif)
-Abrazo grande.
+- **Acceso a la información 100% gratuito.**
+- **Colaboración abierta, transparente y libre.**
+
+Construir, mantener y mejorar el sitio lleva tiempo y recursos. Toda ayuda es súper bienvenida en el proceso:
+
+* **En desarrollo:** Si sabés programar, tirando líneas de código o reportando errores.
+* **En contenido:** Subiendo tus resúmenes, o corrigiendo un simple error de tipeo.
+* **En soporte:** Cualquier apoyo (incluso monetario para bancar los servidores o invitar un café) ayuda a mantener el proyecto vivo y sin publicidad.
+
+Espero que la herramienta te sea de mucha utilidad y que te animes a dejar tu granito de arena para que siga creciendo. 
+
+*[Tomás](https://github.com/tomasccc)*.
+
+![Tobey Maguire Hello](https://media.tenor.com/N40-4WgNinAAAAAM/tobey-maguire-hello.gif)  
+*Abrazo grande.*
