@@ -23,7 +23,7 @@ La idea es que llevés tus notas en tu teléfono, sin descargar nada.
     Si ya estás familiarizado con Git, dentro de nuestro **[repositorio oficial](https://github.com/tomasccc/CALCII-FAMAF-UNC)** vas a encontrar todo el código fuente. Podés clonarlo, editarlo a tu gusto y enviar tus *Pull Requests*. El autor estará encantado de revisar tus aportes y fusionarlos en el código fuente del sitio, a la vez que podés decir que sos contribuyente de un proyecto open source ;) .
     
 ??? question "¿No sabés cómo contribuir con notación matemática?"
-    No te preocupés, el sitio cuenta con un **conversor de LaTeX** integrado. Solo tenés que subir una foto de tus apuntes escritos a mano o una captura de pantalla de una fórmula/teorema, y el sistema los convertirá en texto editable con la notación matemática perfectamente formateada. Así, **podés copiar y pegar directamente en el editor web sin tener que escribir código LaTeX manualmente**.
+    No hay problema, el sitio cuenta con un **conversor de LaTeX** integrado. Solo tenés que subir una foto de tus apuntes escritos a mano o una captura de pantalla de una fórmula/teorema, y el sistema los convertirá en texto editable con la notación matemática perfectamente formateada. Así, **podés copiar y pegar directamente en el editor web sin tener que escribir código LaTeX manualmente**.
     
     Ojo que el conversor no es perfecto, así que siempre es buena idea revisar el resultado antes de pegarlo. Pero es una herramienta súper útil para agilizar la creación de contenido con fórmulas complejas sin necesidad de aprender LaTeX.
 ---
