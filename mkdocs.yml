@@ -6,6 +6,10 @@ repo_url: !ENV [REPO_URL, "https://github.com/tomasccc/ergo"]
 repo_name: !ENV [REPO_NAME, "tomasccc/ergo"]
 edit_uri: !ENV [EDIT_URI, "edit/main/docs/"]
 
+copyright: |
+    Infraestructura bajo licencia AGPLv3. <br>
+    Los apuntes se distribuyen bajo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>. <br>
+    ERGO no se responsabiliza por el contenido subido por terceros en la sección Comunidad.
 theme:
   name: material
   custom_dir: overrides  
