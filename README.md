@@ -1,16 +1,15 @@
 # ERGO | Wikipedia Colaborativa
-FAMAF y quién sabe dónde más
 ![Logo](docs/assets/logo.png)
-ERGO es una plataforma de notas y apuntes colaborativos para estudiantes STEM. El objetivo es centralizar el conocimiento de una clase en particular, facilitar el acceso a material de estudio gratuito y fomentar la colaboración entre estudiantes.
+
+ERGO es una plataforma de notas y apuntes colaborativos para estudiantes STEM. El objetivo es centralizar el conocimiento de una clase en particular, facilitar el acceso a material de estudio gratuito y fomentar la colaboración entre estudiantes. Para FAMAF y quién sabe dónde más.
 ****
 ## **Características Principales**
-* 🏛️ **Contenido Curado:** Sección "Oficial" con material revisado por administradores.
-* 🤝 **Comunidad Abierta:** Cualquier estudiante puede subir sus propios apuntes o ejercicios resueltos.
-* ✍️ **Editor Web Integrado:** No necesitás saber Git para colaborar. Podés usar nuestro panel de **Decap CMS** para escribir desde el navegador.
-* 🧮 **Soporte LaTeX:** Renderizado impecable de fórmulas matemáticas mediante KaTeX/MathJax.
-* 💬 **Feedback Directo:** Comentarios en cada página para correcciones o sugerencias.
+* **Contenido Curado:** Sección "Oficial" con material revisado por administradores.
+* **Comunidad Abierta:** Cualquier estudiante puede subir sus propios apuntes o ejercicios resueltos.
+* **Editor Web Integrado:** No necesitás saber Git para colaborar. Podés usar nuestro panel de **Decap CMS** para escribir desde el navegador.
+* **Soporte LaTeX:** Renderizado impecable de fórmulas matemáticas mediante KaTeX/MathJax.
+* **Feedback Directo:** Comentarios en cada página para correcciones o sugerencias.
 ---
-## **Cómo usarlo**
 ### Para usuarios
 Podés acceder a la versión publicada del sitio aquí:  
 👉 **[https://tomasccc.github.io/ergo](https://tomasccc.github.io/ergo)**
@@ -34,7 +33,7 @@ Este proyecto protege tanto la libertad del código como la autoría del conteni
 ---
 ## **❤️ Apoyo y Mejoras**
 Este sitio se mantiene gracias al esfuerzo del desarrollador. Si te sirve el material, podés ayudar de varias formas:
-* **Desarrollo:** Reportando bugs o mejorando los *hooks* de Python.
+* **Desarrollo:** Reportando bugs o mejorando cualquier aspecto del código actual, o del que se está desarrollando para la próxima versión.
 * **Contenido:** Corrigiendo errores de tipeo en las fórmulas o subiendo nuevos finales resueltos.
 * **Sustento:** Cualquier ayuda para mantener la infraestructura y el dominio es bienvenida.
 ---

@@ -53,7 +53,7 @@ extra:
       link: https://github.com/tomasccc
       name: Mi GitHub
     - icon: fontawesome/solid/mug-hot  
-      link: https://cafecito.app/ergonotes # Reemplazar con tu link real
+      link: https://cafecito.app/ergonotes 
       name: Invitame un café / Colaborar
 
 plugins:
