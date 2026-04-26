@@ -46,7 +46,36 @@ Si preferís contribuir de manera más avanzada, preferís usar un editor de tex
 2. Arriba a la derecha, hacé clic en el botón **Fork**. Esto creará una copia exacta del proyecto en tu propia cuenta de GitHub.
 
 ### 2. Clonar y crear una rama
-Abrí tu terminal y bajate tu copia (cambiá "TuUsuario" por tu nombre de GitHub):
+Una vez que tengas tu propio Fork, GitHub te llevará a tu copia del proyecto. 
+
+1. Hacé clic en el botón verde **Code** y copiá la URL web que aparece ahí.
+2. Abrí tu terminal y usá el comando `git clone` pegando tu URL:
+
 ```bash
-git clone [https://github.com/TuUsuario/CALCII-FAMAF-UNC.git](https://github.com/TuUsuario/CALCII-FAMAF-UNC.git)
-cd CALCII-FAMAF-UNC
+git clone <PEGA_LA_URL_AQUÍ>
+cd <NOMBRE_DE_TU_REPOSITORIO>
+git checkout -b mi-nueva-rama
+```
+
+### 3. Escribir y guardar tus cambios
+Abrí la carpeta del proyecto en tu editor favorito (como VS Code, Obsidian, etc.).
+
+* Navegá hasta la carpeta `docs/comunidad/` o `docs/oficial/`.
+* Creá tu archivo Markdown (`.md`) o agregá tus modificaciones a un apunte existente.
+* Usá el formato correcto para las fórmulas, detallado arriba.
+
+### 4. Subir los cambios a tu GitHub
+Cuando tu aporte esté listo, abrí la terminal, asegurate de estar dentro de la carpeta del proyecto y ejecutá estos comandos para guardar y subir los cambios a tu copia (Fork) en GitHub:
+
+```bash
+git add .
+git commit -m "Agrego un nuevo apunte sobre sucesiones"
+git push origin mi-nueva-rama
+```
+### 5. Crear un Pull Request
+1. Volvé a tu repositorio en GitHub (tu Fork).
+2. Verás un botón que dice **Compare & pull request**. Hacé clic ahí.
+3. Escribí un título descriptivo para tu Pull Request y una breve descripción de los cambios que hiciste.
+4. Finalmente, hacé clic en **Create pull request**.
+
+Un administrador revisará tu Pull Request y, si todo está bien, lo fusionará con el repositorio principal para que tu aporte sea visible en el sitio. ¡Gracias!

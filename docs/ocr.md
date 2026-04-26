@@ -3,7 +3,7 @@
 Esta es una herramienta experimental integrada directamente en la página para facilitar la transcripción de fotos de apuntes, matrices y demostraciones a código LaTeX y lenguaje natural. El resultado te lo entregará formateado y listo para copiar y pegar en tu editor.
 
 !!! warning "Límites de uso diario"
-    Actualmente, el motor de inteligencia artificial funciona bajo un esquema gratuito. Esto significa que tenemos una **cantidad limitada de peticiones**. Si en época de parciales la herramienta se satura de fotos, es posible que el servidor devuelva un mensaje de error temporal.
+    Actualmente, el motor de inteligencia artificial funciona bajo un esquema gratuito. Esto significa que hay una **cantidad limitada de peticiones**, por lo que es posible que el servidor devuelva un mensaje de error temporal ante picos de demanda.
 
 !!! success "El futuro del proyecto"
     Si la herramienta resulta de utilidad, recibe el apoyo esperado y vemos que la adopción aumenta, la idea es mejorar la integración e invertir en una infraestructura sin límites de peticiones.
@@ -104,23 +104,21 @@ Esta es una herramienta experimental integrada directamente en la página para f
 
       currentFile = file;
       fileNameDisplay.textContent = file.name;
-      btn.disabled = false; // Habilitamos el botón
+      btn.disabled = false; // habilitar boton
       
       const reader = new FileReader();
       reader.onload = function(e) {
         imagePreview.src = e.target.result;
         previewContainer.style.display = "block";
-        dropZone.style.display = "none"; // Ocultamos la caja gigante
+        dropZone.style.display = "none"; // ocultar caja
       };
       reader.readAsDataURL(file);
     }
 
-    // Botón de procesar
     if (!btn) return; 
     btn.addEventListener("click", async function() {
       if (!currentFile) return;
 
-      // Desactivamos el botón y mostramos carga
       btn.disabled = true;
       btn.textContent = "Procesando...";
       loading.style.display = "block";
@@ -152,7 +150,5 @@ Esta es una herramienta experimental integrada directamente en la página para f
       }
     });
   });
-  // Error de conexión: NetworkError when attempting to fetch resource.
-  //Error de conexión: Ocurrió un problema: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
 </script>
 

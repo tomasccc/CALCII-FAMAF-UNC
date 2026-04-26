@@ -8,7 +8,9 @@ Este sitio es una especie de "*Wikipedia*" para estudiantes, para cada materia e
 
 ---
 ### **Podés sumar lo que te parezca**
-$$\int_{0}^{T-\epsilon} \text{Procrastinación}(t) \, dt + \lim_{\text{sueño} \to 0} \int_{T-\epsilon}^{T} \nabla \cdot (\text{Pánico} \times \text{Mate}) \, dt = \text{Regularidad} + \mathcal{C}$$
+$$e^{i\pi} + 1 = 0 \ \ \ \ \  \text{es una identidad matemática famosa}$$
+$$\mathbf{J} = \begin{bmatrix} \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\ \vdots & \ddots & \vdots \\ \frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n} \end{bmatrix} \ \ \ \ \ \text{es la matriz jacobiana}$$
+Haciendo click en el botón de edición (✏️ si estás en compu, y al final de la nota si estás en móvil).
 La idea es que llevés tus notas en tu teléfono, sin descargar nada. 
 ??? success "**Colaborá sin salir de la página** (click para abrir)"
     **¿No tenés idea de qué es Git y no querés descargar nada?** 
@@ -33,6 +35,7 @@ La idea es que llevés tus notas en tu teléfono, sin descargar nada.
 !!! tip "Explorá el sitio a tu ritmo"
     * ✨ **[Conversor LaTeX](ocr.md):** Si tenés apuntes escritos a mano o no querés transcribir notación matemática, podés subir una foto y el sistema los convertirá en texto editable, para copiar y pegar.
     * 🏷️ **[Etiquetas (Tags)](tags.md):** Usalas para filtrar rápidamente temas o unidades específicas.
+    * 🔍 **[Guía de Contribución](contribution-guide.md):** Encontrá información sobre cómo colaborar en el proyecto.
     * 💬 **Comentarios:** Al final de cada página podés dejar tu opinión, sugerir mejoras o comentar qué comiste.
     {% if page.meta and page.meta.asistente_ia %}
     * 🤖 **Oráculo IA:** Abajo a la derecha tenés un chatbot alimentado con el contenido de la materia, listo para ayudarte a resolver dudas o encontrar material al instante.
