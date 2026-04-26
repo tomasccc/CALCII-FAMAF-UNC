@@ -9,7 +9,8 @@ edit_uri: !ENV [EDIT_URI, "edit/main/docs/"]
 copyright: |
     Infraestructura bajo licencia AGPLv3. <br>
     Los apuntes se distribuyen bajo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>. <br>
-    ERGO no se responsabiliza por el contenido subido por terceros en la sección Comunidad.
+    ERGO no se responsabiliza por el contenido subido por terceros en la sección Comunidad. <br><br>
+    ☕ <strong>¿Te sirvió el sitio?</strong> Podés <a href="https://cafecito.app/ergonotes" target="_blank">colaborar con el mantenimiento del servidor acá</a>. 
 theme:
   name: material
   custom_dir: overrides  
@@ -51,9 +52,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/tomasccc
       name: Mi GitHub
-    - icon: fontawesome/brands/linux
-      link: https://linuxmint.com/
-      name: Linux Mint
+    - icon: fontawesome/solid/mug-hot  
+      link: https://cafecito.app/ergonotes # Reemplazar con tu link real
+      name: Invitame un café / Colaborar
 
 plugins:
   - search
