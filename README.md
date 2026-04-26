@@ -1,7 +1,6 @@
 # ERGO | Wikipedia Colaborativa
-FAMAF y quién sabe dónde más
 ![Logo](docs/assets/logo.png)
-ERGO es una plataforma de notas y apuntes colaborativos para estudiantes STEM. El objetivo es centralizar el conocimiento de una clase en particular, facilitar el acceso a material de estudio gratuito y fomentar la colaboración entre estudiantes.
+ERGO es una plataforma de notas y apuntes colaborativos para estudiantes STEM. El objetivo es centralizar el conocimiento de una clase en particular, facilitar el acceso a material de estudio gratuito y fomentar la colaboración entre estudiantes. Para FAMAF y quién sabe dónde más.
 ****
 ## **Características Principales**
 * **Contenido Curado:** Sección "Oficial" con material revisado por administradores.
