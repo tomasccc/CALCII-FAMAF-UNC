@@ -45,3 +45,6 @@ Otra opción útil para averiguar el resto, luego combinar con el teorema del sa
 #### **Desigualdad de Taylor**
 9 **Desigualdad de Taylor** Si $|f^{(n+1)}(x)| \leq M$ para $|x - a| \leq d$ entonces el residuo $R_n(x)$ de la serie de Taylor cumple con la desigualdad
 $$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1} \quad \text{para } |x - a| \leq d$$
+****
+##### **Algo a tener en cuenta a la hora de encontrar Series de Taylor**
+**[[¿Cuándo cambia la convergencia de una Serie de Potencias encontrada?]]**
