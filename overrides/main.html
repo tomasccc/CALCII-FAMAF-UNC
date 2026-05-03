@@ -39,11 +39,12 @@
 <hr>
 <h2 id="__comments"></h2>
 <div id="giscus-container">
+  {% if config.extra.giscus %}
   <script src="https://giscus.app/client.js"
-        data-repo="tomasccc/CALCII-FAMAF-UNC"
-        data-repo-id="R_kgDOPuzt5g"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOPuzt5s4C3jEL"
+        data-repo="{{ config.extra.giscus.repo }}"
+        data-repo-id="{{ config.extra.giscus.repo_id }}"
+        data-category="{{ config.extra.giscus.category }}"
+        data-category-id="{{ config.extra.giscus.category_id }}"
         data-mapping="title"
         data-strict="0"
         data-reactions-enabled="1"
@@ -54,7 +55,10 @@
         data-loading="lazy"
         crossorigin="anonymous"
         async>
-</script>
+  </script>
+  {% else %}
+    <p><em>Los comentarios no están configurados para esta wiki :( .</em></p>
+  {% endif %}
 </div>
 
 <script>

@@ -2,8 +2,8 @@ site_name: !ENV [SITE_NAME, "ERGO"]
 site_description: !ENV [SITE_DESCRIPTION, "Sitio estático para notas colaborativas"]
 site_url: !ENV [SITE_URL, "https://tomasccc.github.io/"]
 
-repo_url: !ENV [REPO_URL, "https://github.com/tomasccc/ergo"]
-repo_name: !ENV [REPO_NAME, "tomasccc/ergo"]
+repo_url: !ENV [REPO_URL, "https://github.com/tomasccc/CALCII-FAMAF-UNC"]
+repo_name: !ENV [REPO_NAME, "tomasccc/CALCII-FAMAF-UNC"]
 edit_uri: !ENV [EDIT_URI, "edit/main/docs/"]
 
 copyright: |
@@ -55,6 +55,12 @@ extra:
     - icon: fontawesome/solid/mug-hot  
       link: https://cafecito.app/ergonotes 
       name: Invitame un café / Colaborar
+  decap_proxy: https://decap-proxy.tomycaruso.workers.dev
+  giscus:
+    repo: tomasccc/CALCII-FAMAF-UNC
+    repo_id: R_kgDOPuzt5g
+    category: Announcements
+    category_id: DIC_kwDOPuzt5s4C3jEL
 
 plugins:
   - search

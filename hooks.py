@@ -8,8 +8,12 @@ image_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp')
 
 def on_config(config):
     file_map.clear()
+
     docs_dir = config['docs_dir']
-    
+    repo_url = config.get('repo_url', '')
+    github_repo = repo_url.replace('https://github.com/', '').strip('/') if repo_url else ''
+    decap_proxy = config.get('extra', {}).get('decap_proxy', 'https://decap-proxy.tomycaruso.workers.dev')
+
     # escaneo de todo el repo para los links de Obsidian
     for root, dirs, files in os.walk(docs_dir):
         for file in files:
@@ -25,9 +29,9 @@ def on_config(config):
         'locale': 'es',
         'backend': {
             'name': 'github',
-            'repo': 'tomasccc/CALCII-FAMAF-UNC',
+            'repo': github_repo,
             'branch': 'main',
-            'base_url': 'https://decap-proxy.tomycaruso.workers.dev',
+            'base_url': decap_proxy,
             'open_authoring': True,
         },
         'slug': {
