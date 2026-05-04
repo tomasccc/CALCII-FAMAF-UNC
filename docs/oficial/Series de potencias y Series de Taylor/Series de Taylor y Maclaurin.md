@@ -1,13 +1,10 @@
 **¿Qué funciones se pueden representar como series de potencias? ¿Cómo es posible hallar esa representación?.** 
-Se recomienda ver primero **[[D-Serie de Taylor]]**...
+Se recomienda ver primero **[[D-Serie-de-Taylor]]**...
 ****
 #### **Teorema** Si ($f$) se puede representar como una serie de potencias (expansión) en ($a$), es decir, si
 $$f(x) = \sum_{n=0}^{\infty} c_n(x-a)^n \quad |x-a| < R$$
-
 entonces sus coeficientes están dados por la fórmula
-
 $$c_n = \frac{f^{(n)}(a)}{n!}$$
-
 ****
 Si substituimos esta fórmula para ($c_n$) de nuevo en la serie, observamos que si ($f$) tiene derivadas de todos los órdenes en $a$, entonces debe ser de la forma siguiente:
  
@@ -26,11 +23,14 @@ Entonces, los coeficientes ($c_n$) están **unívocamente determinados**. No pue
 Con esto podemos calcular y definir la serie de Taylor $T(x)$ de una función $f$, pero...  
 #### **¿Cuándo efectivamente $f$ va a ser igual a su Serie de Taylor?**
 Es decir, que se cumpla la igualdad de la ecuación $6$.
-**[[D-Teorema de Taylor]]**
 #### $8$ **Teorema.** Si ($f(x) = T_n(x) + R_n(x)$) donde ($T_n$) es el polinomio de Taylor de ($n$)-ésimo grado de ($f$) en ($a$) y
 $$\lim_{n \to \infty} R_n(x) = 0$$
 para ($|x - a| < R$) entonces ($f$) es igual a la suma de sus series de Taylor en el intervalo ($|x - a| < R$).
 ****
+Este último teorema tiene otra forma de ser enunciado, quizás más memorable.
+Sea $f$ una función tal que existe $f^{(n)}$ $\forall n \ge 0$. Se cumple
+$$ f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} (x-a)^n \quad \forall x \in (a-c, a+c) \iff \lim_{n \to \infty} R_{n,a}(x) = 0 \quad \forall x \in (a-c, a+c). $$
+**[[D-Teorema de Taylor]]**
 #### **Definición.** Se define el resto de Taylor de orden ($n$) centrado en ($a$) como
 $$R_{n,a}(x) \doteq f(x) - T_{n,a}(x).$$
 (Por lo tanto, ($f(x) = T_{n,a}(x) + R_{n,a}(x)$)).
@@ -40,3 +40,11 @@ Determinar $\lim_{n \to \infty} R_n(x)$ puede ser complicado teniendo en cuenta 
 Sea ($f$) una función tal que existen ($f', f'', \dots, f^{(n+1)}$) en un intervalo abierto ($I$) y sea ($a \in I$). Entonces, para cada ($x \in I$) existe ($t$) entre ($x$) y ($a$) (($t \in (x, a)$) si ($x < a$) y ($t \in (a, x)$) si ($x > a$)) tal que
 $$R_{n,a}(x) = \frac{f^{(n+1)}(t)}{(n+1)!} (x-a)^{n+1}$$
 **[[D-Fórmula de Lagrange para el Resto | Demostración de esto mismo.]]**
+****
+Otra opción útil para averiguar el resto, luego combinar con el teorema del sandwich es la siguiente desigualdad
+#### **Desigualdad de Taylor**
+9 **Desigualdad de Taylor** Si $|f^{(n+1)}(x)| \leq M$ para $|x - a| \leq d$ entonces el residuo $R_n(x)$ de la serie de Taylor cumple con la desigualdad
+$$|R_n(x)| \leq \frac{M}{(n+1)!} |x - a|^{n+1} \quad \text{para } |x - a| \leq d$$
+****
+##### **Algo a tener en cuenta a la hora de encontrar Series de Taylor**
+**[[¿Cuándo cambia la convergencia de una Serie de Potencias encontrada?]]**

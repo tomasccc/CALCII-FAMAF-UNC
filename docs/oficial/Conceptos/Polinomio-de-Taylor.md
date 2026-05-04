@@ -28,6 +28,6 @@ Para nuestro caso:
 Sustituimos estos valores en la fórmula:
 $$y - f(a) = f'(a)(x - a)$$
 Si despejamos ($y$) (que es la función de la recta tangente, llamémosla ($L(x)$)):$$L(x) = f(a) + f'(a)(x - a)=T_{1}$$Tomando como ejemplo el ejemplo 1 de [[E-Serie de Taylor y Maclaurin]]... 
-![[Pasted image 20251106100832.png]]
+![[site/Series de potencias - U3/assets/Pasted image 20251106100832.png]]
 
 

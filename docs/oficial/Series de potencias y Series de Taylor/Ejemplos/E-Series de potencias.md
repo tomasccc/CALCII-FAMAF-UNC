@@ -24,4 +24,4 @@ de modo que la serie converge cuando ($2 < x < 4$) y diverge cuando ($x < 2$) o 
 $$\sum_{n=0}^{\infty} x^n \quad (A) \sim \text{serie geométrica}$$
 Ya sabemos que la serie (A) converge y vale
 $$\frac{1}{1-x} \iff |x| < 1$$
-![[Pasted image 20251031202734.png]]
+![[site/Series de potencias - U3/assets/Pasted image 20251031202734.png]]
